@@ -138,7 +138,8 @@ h2 {
 }
 
 .portfolio-gallery-speciality {
-  line-height: 1.67;
+  line-height: 1.87;
+  color: var(--primary-text-color);
 }
 /* ------------------------.footer-logo - section --------------------------------*/
 
