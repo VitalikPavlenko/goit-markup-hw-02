@@ -24,8 +24,7 @@
 }
 
 body {
-  background-color: var(--background-primary-color);
-
+  background-color: #FFFFFF;
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
 
@@ -41,9 +40,8 @@ a {
 .list {
   list-style: none;
 }
-
-h1,
-h2 {
+.hero-title,
+.about-title {
   text-transform: uppercase;
 }
 
@@ -73,11 +71,6 @@ h2 {
   color: var(--logo-primary-text-color);
 }
 
-.navigation,
-.header-kontakt {
-  list-style: none;
-}
-
 .navigation-item,
 .header-link-mail,
 .header-link-tel {
@@ -92,19 +85,79 @@ h2 {
   color: var(--title-text-color);
 }
 
+.current {
+  color: var(--accent-color);}
+
 .header-link-mail,
 .header-link-tel {
   list-style: none;
   color: var(--primary-text-color);
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-link-mail:hover,
-.header-link-mail:focus,
-.header-link-tel:hover,
+.header-link:hover, 
+.header-link:focus, 
+.header-link-mail:hover, 
+.header-link-mail:focus, 
+.header-link-tel:hover, 
 .header-link-tel:focus {
   color: var(--accent-color);
+}
+
+/* ------------------------main - section --------------------------------*/
+.hero {
+background-color: var(--background-secondary-color);
+text-align: center;
+color: var(--primary-white-color);
+letter-spacing: 0.06em;
+}
+
+.hero-title {
+font-family: inherit;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+/*position: absolute;*/
+}
+
+.hero-btn {
+background-color: var(--accent-color);
+font-family: inherit;
+width: 200px;
+height: 50px;
+color: var(--primary-white-color);
+}
+
+.about-title {
+color: var(--title-text-color);
+font-size: 14px;
+line-height: 1.14;
+}
+
+.person-comand {
+ background-color: #F5F4FA; 
+ ; 
+}
+
+.field-title,
+.person-comand-title {
+color: var(--title-text-color);
+font-size: 36px;
+line-height: 1.16px;
+text-align: center;}
+
+.person-comand-item {
+   font-size: 16px;
+  line-height: 1.19px; }
+
+.person-name {
+  text-align: center;
+  color: var(--title-text-color);
+font-weight: 500;
+}
+
+.person-speciality {
+  text-align: center;
+color: var(-primary-text-color);
 }
 
 /* ------------------------portfolio-filtr - section --------------------------------*/
@@ -121,6 +174,7 @@ h2 {
   color: var(--title-text-color);
   cursor: pointer;
 }
+
 .portfolio-filtr-btn:hover,
 .portfolio-filtr-btn:focus {
   color: #ffffff;
@@ -154,7 +208,9 @@ h2 {
 .footer-link-mail,
 .footer-link-tel {
   text-decoration: none;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--logo-secondary-text-color);
 }
+
